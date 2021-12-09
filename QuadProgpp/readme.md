@@ -3,7 +3,7 @@
 ***Quadprogpp*** 是由*Luca Di Gaspero*所写的
 *c++* *QP*问题求解器, 其功能与*Matlab*中的二次规划*solver*一致。  
 
-在QP问题中，其标准形式为:   
+在QP问题中，其标准形式为:  
 $$  
 \begin{aligned}
     \underset{x}{min} &f = \frac{1}{2}x^TGx + g_0^Tx  \\

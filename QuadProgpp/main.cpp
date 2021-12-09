@@ -1,3 +1,7 @@
+/*
+* f = 2 * x1 * x1 + 2 * x2 * x2 - 2 * x1 * x2 + 6 * x1
+*/
+
 #include <iostream>
 #include <Eigen/Core>
 #include <QuadProg++/QuadProg++.hh>
