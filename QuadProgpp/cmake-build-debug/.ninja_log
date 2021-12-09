@@ -1,0 +1,9 @@
+# ninja log v5
+0	12	1639057316278521402	build.ninja	2a80d451cfbcaea7
+635	674	1639057104596772439	QuadProgpp_tuitor	6ef14e09ebc5a237
+0	198	1639057216879492361	CMakeFiles/QuadProgpp_tuitor.dir/main.cpp.o	add06b663d207bc4
+0	36	1639057318950497125	QuadProgpp_tuitor	364577dfd8caa093
+0	683	1639057347822240398	CMakeFiles/QuadProgpp_tuitor.dir/main.cpp.o	add06b663d207bc4
+683	725	1639057347866240014	QuadProgpp_tuitor	364577dfd8caa093
+1	710	1639057454609372189	CMakeFiles/QuadProgpp_tuitor.dir/main.cpp.o	add06b663d207bc4
+710	750	1639057454649371885	QuadProgpp_tuitor	364577dfd8caa093
