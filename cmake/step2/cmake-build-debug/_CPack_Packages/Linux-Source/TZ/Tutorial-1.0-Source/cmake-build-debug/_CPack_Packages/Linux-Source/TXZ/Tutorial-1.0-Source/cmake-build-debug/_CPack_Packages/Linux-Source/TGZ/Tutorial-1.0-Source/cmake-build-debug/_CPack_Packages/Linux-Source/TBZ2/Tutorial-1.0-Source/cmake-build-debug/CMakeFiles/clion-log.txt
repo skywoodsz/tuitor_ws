@@ -1,0 +1,11 @@
+/home/skywoodsz/tools/clion-2021.3/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=/home/skywoodsz/tools/clion-2021.3/bin/ninja/linux/ninja -G Ninja /home/skywoodsz/tuitor_ws/cmake/step2
+CMake Error at /home/skywoodsz/tools/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CPack.cmake:635 (message):
+  CPack license resource file:
+  "/home/skywoodsz/tuitor_ws/cmake/step2/License.txt" could not be found.
+Call Stack (most recent call first):
+  /home/skywoodsz/tools/clion-2021.3/bin/cmake/linux/share/cmake-3.21/Modules/CPack.cmake:640 (cpack_check_file_exists)
+  CMakeLists.txt:57 (include)
+
+
+-- Configuring incomplete, errors occurred!
+See also "/home/skywoodsz/tuitor_ws/cmake/step2/cmake-build-debug/CMakeFiles/CMakeOutput.log".

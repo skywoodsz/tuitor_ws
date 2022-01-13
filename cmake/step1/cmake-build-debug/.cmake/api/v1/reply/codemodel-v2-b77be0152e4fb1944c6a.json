@@ -1,0 +1,90 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-41169977d7c246aa3d87.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						1
+					]
+				},
+				{
+					"build" : "MathFunctions",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-MathFunctions-Debug-f653ea4cb6f243f9c3f9.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.21"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "MathFunctions",
+					"targetIndexes" : 
+					[
+						0
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "Tutorial",
+					"targetIndexes" : 
+					[
+						0,
+						1
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 1,
+					"id" : "MathFunctions::@742f1924b0b2e2878db6",
+					"jsonFile" : "target-MathFunctions-Debug-8a809745e7aeb85efd8c.json",
+					"name" : "MathFunctions",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "Tutorial::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-Tutorial-Debug-889d1a472c3d78fa98d4.json",
+					"name" : "Tutorial",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/skywoodsz/tuitor_ws/cmake/cmake-build-debug",
+		"source" : "/home/skywoodsz/tuitor_ws/cmake"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

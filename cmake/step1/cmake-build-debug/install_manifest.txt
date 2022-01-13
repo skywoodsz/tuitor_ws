@@ -1,0 +1,4 @@
+/home/skywoodsz/tuitor_ws/cmake/cmake-build-debug/./lib/libMathFunctions.a
+/home/skywoodsz/tuitor_ws/cmake/cmake-build-debug/./include/MathFunctions.h
+/home/skywoodsz/tuitor_ws/cmake/cmake-build-debug/./bin/Tutorial
+/home/skywoodsz/tuitor_ws/cmake/cmake-build-debug/./include/TutorialConfig.h

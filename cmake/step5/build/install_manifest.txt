@@ -1,0 +1,5 @@
+/home/skywoodsz/tuitor_ws/cmake/step5/build/./install/lib/libhello.so.1.2
+/home/skywoodsz/tuitor_ws/cmake/step5/build/./install/lib/libhello.so.1
+/home/skywoodsz/tuitor_ws/cmake/step5/build/./install/lib/libhello.so
+/home/skywoodsz/tuitor_ws/cmake/step5/build/./install/lib/libhello.a
+/home/skywoodsz/tuitor_ws/cmake/step5/build/./install/include/hello/hello.h

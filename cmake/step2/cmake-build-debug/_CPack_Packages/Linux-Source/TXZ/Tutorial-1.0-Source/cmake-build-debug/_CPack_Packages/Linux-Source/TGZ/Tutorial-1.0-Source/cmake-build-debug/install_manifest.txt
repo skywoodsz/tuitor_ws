@@ -1,0 +1,4 @@
+/home/skywoodsz/tuitor_ws/cmake/step2/cmake-build-debug/_CPack_Packages/Linux/TZ/Tutorial-1.0-Linux/lib/libMathFunctions.a
+/home/skywoodsz/tuitor_ws/cmake/step2/cmake-build-debug/_CPack_Packages/Linux/TZ/Tutorial-1.0-Linux/include/MathFunctions.h
+/home/skywoodsz/tuitor_ws/cmake/step2/cmake-build-debug/_CPack_Packages/Linux/TZ/Tutorial-1.0-Linux/bin/Tutorial
+/home/skywoodsz/tuitor_ws/cmake/step2/cmake-build-debug/_CPack_Packages/Linux/TZ/Tutorial-1.0-Linux/include/TutorialConfig.h

@@ -1,0 +1,5 @@
+/home/skywoodsz/tuitor_ws/cmake/step4/build/./install/bin/hello
+/home/skywoodsz/tuitor_ws/cmake/step4/build/./install/doc/COPYRIGHT
+/home/skywoodsz/tuitor_ws/cmake/step4/build/./install/doc/README.md
+/home/skywoodsz/tuitor_ws/cmake/step4/build/./install/bin/runhello.sh
+/home/skywoodsz/tuitor_ws/cmake/step4/build/./install/share/doc//hello.txt
