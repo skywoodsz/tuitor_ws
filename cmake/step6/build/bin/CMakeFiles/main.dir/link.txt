@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/main.dir/main.cpp.o -o main   -L/home/skywoodsz/tuitor_ws/cmake/step5/build/install/lib  -Wl,-rpath,/home/skywoodsz/tuitor_ws/cmake/step5/build/install/lib -lhello 

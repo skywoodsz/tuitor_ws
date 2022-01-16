@@ -35,22 +35,27 @@
 
     `target_link_libraries(Tutorial ${EXTRA_LIBS})`
 
-6.  包含include文件地址
+    *Notes:* 连接库可填库名(xxx)/静态库(libxx.a)/动态库(libxx.so)
+
+    查看连接情况命令：`ldd 文件名`
+
+6.  包含includet头文件地址
 
     ```cmake
     target_include_directories(Tutorial PUBLIC
                                 "${PROJECT_BINARY_DIR}" # 编译目录位置
                                 "${EXTRA_INCLUDES}"
             ) # 包含头文件路径
+    # LINK_DIRECTORIES() 包含lib文件地址
     ```
 
 *Notes：*宏变量定义
 
 ```
  "${PROJECT_BINARY_DIR}" # 工程编译目录位置
- "${PROJECT_SOURCE_DIR}" # 工程源文件位置
+ "${PROJECT_SOURCE_DIR}" # 工程顶层目录位置
  ${CMAKE_CURRENT_BINARY_DIR} 当前编译目录位置
- ${CMAKE_CURRENT_SOURCE_DIR} 当前源文件目录位置
+ ${CMAKE_CURRENT_SOURCE_DIR} 当前源文件(处理的CMakeLists)所在目录位置
 ```
 
 #### 2. 生成库
@@ -176,6 +181,58 @@ INSTALL(TARGETS MathFunctions DESTINATION lib)
     
     
 
-​    
+#### 5. FIND CMAKE使用与编写
 
-​    
+##### 5.1 编写 
+
+在cmake文件夹下的FINDHELLO.cmake(FINDXXX.cmake)，指定变量
+
+-   XXX_INCLUDE_DIR：头文件地址
+-   XXX_LIBRARY:  库文件地址
+-   XXX_FOUND：是否找到
+
+```cmake
+# 定义变量 库头文件 HELLO_INCLUDE_DIR 头文件.h 绝对路径
+FIND_PATH(HELLO_INCLUDE_DIR hello.h /home/skywoodsz/tuitor_ws/cmake/step5/build/install/include/hello)
+# 定义变量 库文件 HELLO_LIBRARY 库文件名称 绝对路径
+FIND_LIBRARY(HELLO_LIBRARY hello /home/skywoodsz/tuitor_ws/cmake/step5/build/install/lib)
+
+# 设置回馈变量 HELLO_FOUND TRUE
+# Notes： IF 和 ENDIF 和 ELSE 的括号中变量形式相同
+IF(HELLO_INCLUDE_DIR AND HELLO_LIBRARY)
+	SET(HELLO_FOUND TRUE)
+ENDIF(HELLO_INCLUDE_DIR AND HELLO_LIBRARY)
+
+IF(HELLO_FOUND)
+	#IF(NOT HELLO_FIND_QUIETLY)
+	#	MESSAGE(STATUS "Found Hello: ${HELLO_LIBRARY}")
+	#ENDIF(HELLO_FIND_QUIETLY)
+ELSE(HELLO_FOUND)
+	IF(HELLO_FOUND_REQUIRED) # 是否指明REQUIRED关键字
+		MESSAGE(FATAL_ERROR "Could not find hello lib")
+	ENDIF(HELLO_FOUND_REQUIRED)
+ENDIF(HELLO_FOUND)
+```
+
+##### 5.2 引用
+
+-   设置findxxx.cmake地址
+
+`set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)`   
+
+-   找lib
+
+    `FIND_PACKAGE(HELLO REQUIRED)`
+
+-   引用编译
+
+    ```cmake
+    IF(HELLO_FOUND)
+    	ADD_EXECUTABLE(main main.cpp)
+    	INCLUDE_DIRECTORIES(${HELLO_INCLUDE_DIR})
+    	TARGET_LINK_LIBRARIES(main ${HELLO_LIBRARY})
+    ENDIF(HELLO_FOUND)
+    ```
+
+    
+

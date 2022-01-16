@@ -1,0 +1,15 @@
+cmake_minimum_required(VERSION 3.22)
+Project(HELLO VERSION 7.0)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+set(CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake)
+
+
+ADD_SUBDIRECTORY(src)
+
+
+
+
+
